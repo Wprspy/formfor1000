@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .input1, .input2, .input3 {
+      text-align: right;
+      padding-left: 80px;
+      font-family: Alef;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+    .Messege {
+      text-align: right;
+      font-family: Alef;
+      margin-top: 10px;
+      padding-left: 100px;
+      font-size: 14px;
+    }
+    .form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .Submit {
+      width: 150px;
+      font-size: 30px;
+      color: #2d8375;
+      background-color: #FFFDF8;
+      height: 50px;
+      border-radius: 50px;
+      cursor: pointer;
+      border: none;
+      font-family: Alef;
+      margin-top: 20px;
+    }
+    .Submit:hover {
+      background-color: #e2e0da;
+    }
+    .Submit:active {
+      background-color: #cccac3;
+    }
+    .other {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .title {
+      font-size: 40px;
+      color: #FFFDF8;
+      font-family: Alef;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+    body {
+      background-color: #2d8375;
+      width: 100%;
+      height: 100%;
+    }
+    .Button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
+    <div class="other"><p class="title">פרטים והרשמה</p></div>
+    <form action="https://formspree.io/f/xayvrvwb" method="post">
+      <div class="form">
+        <input class="input3" type="text" name="name" placeholder="שם מלא" required>
+        <input class="input2" type="email" name="email" placeholder="אימייל" required>
+        <input class="input1" type="tel" name="Telephone" placeholder="טלפון" required>
+        <input class="Messege" type="text" name="Messege" placeholder="הודעה/הערות" required>
+      </div>
+      <div class="Button">
+        <button class="Submit" type="submit">שלח</button>
+      </div>
+    </form>
+  </body>
+</html>
